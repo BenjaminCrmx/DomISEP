@@ -1,0 +1,130 @@
+ <!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="faq.css"> 
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+        var acc = document.getElementsByClassName("accordion");
+        var panel = document.getElementsByClassName('panel');
+
+        for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+        var setClasses = !this.classList.contains('active');
+        setClass(acc, 'active', 'remove');
+        setClass(panel, 'show', 'remove');
+
+        if (setClasses) {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    }
+
+    function setClass(els, className, fnName) {
+        for (var i = 0; i < els.length; i++) {
+        els[i].classList[fnName](className);
+        }
+    }
+
+    });
+    </script>
+
+  <title>DomISEP - FAQ</title>
+</head>
+
+<body>
+
+
+
+<!--début du header -->
+    <ul id="header">
+
+        <li class="menu_gauche">
+
+            <a href="Maison.html" class="logo"> <img src="logo.png" alt="DomISEP"/> </a>
+            
+            
+            <a href="Maison.html" class="ecriture">Maison</a>
+            
+            
+            <ul class="menuvertical">
+    
+    <li><a href="#">Pièces </a>
+    <ul>
+        <li><a href="#">Salon</a></li>
+        <li><a href="#">Cuisine</a></li>
+        <li><a href="#">Chambre</a></li>
+        <li><a href="#">Salle de bain</a></li>
+        <li><a href="#">Gérer</a></li>
+    </ul>
+    </li>
+            </ul>
+
+        </li>
+
+        <li class="menu_droite">
+
+            <ul class="menuvertical2">
+
+        <li><a href="Profil.html"> <img src="profil.png" alt="Sophie"/> </a>
+        <ul>
+            <li><a href="#">Compte</a></li>
+            <li><a href="faq.html">Centre d'aide</a></li>
+            <li><a href="Bienvenue.html">Déconnexion</a></li>
+    </ul>
+    </li>
+            </ul>
+
+        </li>
+
+    </ul>
+<!-- fin du header */ -->s
+
+
+
+
+
+
+
+        <div class="bas">
+            <div class="faq">
+                <div class="titre">
+                <p>FAQ</p>
+                </div>
+                <p class="accordion">Q1. Comment peut-on rajouter un nouveau produit à notre liste de capteurs?</p>
+                    <div class="panel">
+                        Il suffit de se rendre dans la page maison ou pièce et de cliquer sur le bouton “plus” qui se situe tout en bas de la page.
+                    </div>
+                        <p class="accordion">Q2. Comment peut-on ajouter ou supprimer une pièce?</p>
+                    <div class="panel">
+                        Il suffit de cliquer sur “gérer” qui se situe tout en bas du menu déroulant qui apparaît quand on survole “Pièces” dans le menu de haut de page.
+
+                    </div>
+                <p class="accordion">Q3. Comment supprimer un capteur?</p>
+                <div class="panel">
+                    Il suffit de cliquer sur le bouton “plus” en bas de la page maison ou pièce. Il apparaîtra ensuite en haut à droite de chaque capteur une petite croix permettant de les supprimer.
+
+                </div>
+            <p class="accordion">Q4.  Que faire si mon capteur n’est pas détecté sur le site?
+</p>
+                <div class="panel">
+                    Vérifiez d’abord que vous ayez bien mis le bon numéro de série du capteur. Si ce n’était pas le cas, supprimez le mauvais capteur et ajouter le nouveau avec le bon numéro de série.
+                </div>
+                <p class="accordion">Q5.  Comment contacter le service après vente pour un problème plus spécifique?
+
+</p>
+                <div class="panel">
+                    Il suffit de se rendre dans la page centre d’aide et d’utiliser la messagerie prévue à cet effet. Vous trouverez la page centre d’aide en survolant votre photo de profil en haut à droite du site avec votre souris.
+                </div>
+            </div> 
+        </div>
+        <div class="boutton">
+            <a href="#"><img src="message.png" alt="message" /></a>
+        </div>
+</body>
+</html> 

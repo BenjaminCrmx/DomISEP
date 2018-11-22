@@ -1,0 +1,95 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 100%;
+    height: 0px
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+div.hh1
+{
+
+    color: white;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-top: 85px;
+}
+
+
+
+.fond_mode1 {
+    height: 210px;
+    width: 650px;
+    padding: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+div.fond_mode1 img {
+    width: 30px;
+    height: 30px;
+    padding: 0 2em 0 0;
+}
+
+div.fond_mode1 div.bouton_mode1 {
+    /*background-color: black;*/
+    height: 170px;
+}
+
+.mode_haut1 {
+    float: left;
+    margin: 0 0 0 85px;
+}
+
+.mode_bas1 {
+    display:inline-block;
+    float:left;
+}
+
+div.fond_mode1 div.bouton_mode1 a {
+    display: block;
+    width: 220px;
+    height: 75px;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    background: white;
+    padding: 0 2em;
+    border-radius: 17px;
+    margin: 0 1em 1em 0;
+}

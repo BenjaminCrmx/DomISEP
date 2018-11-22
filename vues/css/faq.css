@@ -1,0 +1,298 @@
+/* début du header */
+#header  {
+    width: 100%;
+    height: 80px;
+    list-style-type : none; 
+    margin : 0;
+    padding : 15px 0 0 0;
+    background-color : white;
+    position: fixed;
+    top:0px;
+}
+
+ul#header li {
+    padding : 0 3em;
+}
+
+
+ul#header li.menu_gauche {
+    display: flex;
+    align-items: center;
+    float : left;
+}
+
+
+ul#header li.menu_gauche a.ecriture {
+    text-decoration : none;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #BEBEBE;
+    margin: 0 0 0 85px;
+}
+
+
+ul#header li.menu_droite {
+    float : right;
+}
+
+
+ul#header img {
+
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+}
+
+/* menu deroulant*/
+.menuvertical {
+    width: 130px; /* Largeur du menu */ 
+}
+.menuvertical, 
+.menuvertical ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none ; 
+    padding: 0px;
+}
+.menuvertical ul {
+    /* Masquage des sous-menu par defaut */
+    display: none ;
+}
+.menuvertical li {
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+       sous-menu correctement en absolu */
+    position:   relative;
+}
+.menuvertical a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block ;
+    
+    /* Dimensions des liens */
+    width: 150px;
+    height: 30px;
+    line-height: 30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    padding: 6px 0px;
+    text-align: center;
+}
+.menuvertical li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block ;
+    
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 40px; 
+    left: 0px; /* Decalage du sous-menu de la largeur du menu */
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+.menuvertical ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+    en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+/* Gestion des couleurs */
+.menuvertical li {
+/* Couleur d'arriere-plan du menu */
+}
+.menuvertical li a {
+    color: #BEBEBE; /* Couleur du texte du menu */
+    text-decoration: none;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menuvertical li:hover {
+ /* Couleur d'arriere-plan du menu au survol */
+}
+.menuvertical li:hover a {
+/* Couleur du texte du menu au survol */
+}
+.menuvertical ul li {
+    background-color: white; /* Couleur d'arriere-plan des sous-menu */
+    margin: 0px;
+}
+.menuvertical ul li:hover {
+    /* background-color: #DCDCDC;  Couleur d'arriere-plan des sous-menu au survol */
+}
+.menuvertical ul li a {
+    color: #BEBEBE; /* Couleur du texte des sous-menu */
+    font-size: 24px;
+    border-bottom: 1px solid #BEBEBE;
+}
+.menuvertical ul li:hover a {
+    color: #888888; /* Couleur du texte des sous-menu au survol */
+    font-size: 25px;
+}
+/* fin menu deroulant*/
+
+/* menu deroulant2*/
+.menuvertical2 {
+    width: 130px; /* Largeur du menu */ 
+}
+.menuvertical2, 
+.menuvertical2 ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none ; 
+    padding: 0px;
+}
+.menuvertical2 ul {
+    /* Masquage des sous-menu par defaut */
+    display: none ;
+}
+.menuvertical2 li {
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+       sous-menu correctement en absolu */
+    position:   relative;
+}
+.menuvertical2 a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block ;
+    
+    /* Dimensions des liens */
+    width: 150px;
+    height: 30px;
+    line-height: 30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    /* padding: 3px 0px; */
+    text-align: center;
+}
+.menuvertical2 li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block ;
+    
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 66px; 
+    left: -40px; /* Decalage du sous-menu de la largeur du menu */
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+.menuvertical2 ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+    en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+/* Gestion des couleurs */
+.menuvertical2 li {
+/* Couleur d'arriere-plan du menu */
+}
+.menuvertical2 li a {
+    color: #BEBEBE; /* Couleur du texte du menu */
+    text-decoration: none;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menuvertical2 li:hover {
+ /* Couleur d'arriere-plan du menu au survol */
+}
+.menuvertical2 li:hover a {
+/* Couleur du texte du menu au survol */
+}
+.menuvertical2 ul li {
+    background-color: white; /* Couleur d'arriere-plan des sous-menu */
+    margin: 0px;
+}
+.menuvertical2 ul li:hover {
+    /* background-color: #DCDCDC;  Couleur d'arriere-plan des sous-menu au survol */
+}
+.menuvertical2 ul li a {
+    color: #BEBEBE; /* Couleur du texte des sous-menu */
+    font-size: 24px;
+    border-bottom: 1px solid #BEBEBE;
+}
+.menuvertical2 ul li:hover a {
+    color: #888888; /* Couleur du texte des sous-menu au survol */
+    font-size: 25px;
+}
+/* fin menu deroulant2*/
+/* fin du header */
+
+
+<style>
+
+p.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordion{
+    padding: 15px 10px 15px 10px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1px;
+    color:#888888;
+    font-size: 25px;
+}
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #dcdcdc;
+    padding: 15px 10px 15px 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795'; 
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796"; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the element that is used for the panel class */
+
+div.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    margin: 6px 18px 0px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#888888;
+    font-size: 25px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+.titre{
+    width: 11%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titre p{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+}
+.boutton{
+    margin-top:25px;
+    float:right;
+}
+.boutton img{
+    max-width: 100%;
+    width: 130px;
+}
+
+div.bas {
+    margin-top: 15%;
+}
+
+</style>

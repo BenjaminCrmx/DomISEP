@@ -1,0 +1,78 @@
+html, body
+{
+    margin: 0; padding: 0;
+}
+
+/* début du header */
+
+#header  {
+  width: 100%;
+  height: 80px;
+  list-style-type : none; 
+  margin : 0;
+  padding : 15px 0 0 0;
+  background-color : white;
+  position: fixed;
+  top:0px;
+  text-align: center;
+
+}
+
+ul#header img {
+
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 2%;
+}
+
+
+ul#header div.ecriture {
+  margin-top: 14.4px;
+}
+
+ul#header div.ecriture a {
+  margin: 0 4%;
+  text-decoration : none;
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #BEBEBE;
+}
+
+/*fin du header */
+
+p.bienvenue
+
+{
+
+margin-top: 20%;
+margin-bottom: 10px;
+color: #888888;
+font-size: 80px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+.photo {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1050px;
+}
+
+.photo img
+{
+
+padding-top: 45px;
+}
+
+p.Qui
+{
+color: #888888;
+font-size: 65px;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 3%;
+
+}
+
+

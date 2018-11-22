@@ -1,0 +1,75 @@
+html, body
+{
+    margin: 0; padding: 0;
+}
+
+/* début du header */
+
+#header  {
+  width: 100%;
+  height: 80px;
+  list-style-type : none; 
+  margin : 0;
+  padding : 15px 0 0 0;
+  background-color : white;
+  position: fixed;
+  top:0px;
+  text-align: center;
+
+}
+
+ul#header img {
+
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  float: left;
+  margin-left: 2%;
+}
+
+
+ul#header div.ecriture {
+  margin-top: 14.4px;
+}
+
+ul#header div.ecriture a {
+  margin: 0 4%;
+  text-decoration : none;
+  font-size: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #BEBEBE;
+}
+
+/*fin du header */
+
+.text_centre1{
+
+color: #888888;
+font-size: 80px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20%;
+}
+
+
+.Message
+{
+color: #888888;
+font-size: 26px;
+font-family: Arial, Helvetica, sans-serif;
+margin-left: 10%;
+margin-right: 10%;
+text-align: center;
+}
+
+.photo 
+{
+max-width: 100%;
+padding-top: 2%;
+display: block;
+margin-right: auto;
+margin-left: auto;
+}
+
+
+

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" href="Maison.css" />
+
+				
+        <title>DomISEP - Maison</title>
+
+    </head>
+
+    
+
+<body>
+
+<!--début du header -->
+    <ul id="header">
+
+        <li class="menu_gauche">
+
+            <a href="Maison.html" class="logo"> <img src="logo.png" alt="DomISEP"/> </a>
+			
+			
+			<a href="Maison.html" class="ecriture">Maison</a>
+			
+			
+			<ul class="menuvertical">
+	
+	<li><a href="#">Pièces </a>
+	<ul>
+		<li><a href="#">Salon</a></li>
+		<li><a href="#">Cuisine</a></li>
+		<li><a href="#">Chambre</a></li>
+		<li><a href="#">Salle de bain</a></li>
+		<li><a href="#">Gérer</a></li>
+	</ul>
+	</li>
+			</ul>
+
+        </li>
+
+        <li class="menu_droite">
+
+        	<ul class="menuvertical2">
+
+        <li><a href="Profil.html"> <img src="profil.png" alt="Sophie"/> </a>
+        <ul>
+			<li><a href="#">Compte</a></li>
+			<li><a href="faq.html">Centre d'aide</a></li>
+			<li><a href="Bienvenue.html">Déconnexion</a></li>
+	</ul>
+	</li>
+			</ul>
+
+        </li>
+
+    </ul>
+<!-- fin du header */ -->
+
+
+
+    <div class= "fond_mode">
+
+        <div class= "bouton_mode">
+
+        <a href="#" class="mode_haut"> <img src="soleil.png" alt="Soleil"/>Bonjour</a>
+
+        <a href="#" class="mode_haut"> <img src="Lune.png" alt="Lune"/>Bonne nuit</a>
+
+        <a href="#" class="mode_bas"> <img src="out.png" alt="Out"/>Je sors</a>
+
+        <a href="#" class="mode_bas"> <img src="in.png" alt="Soleil"/>Je rentre</a>
+
+
+
+
+    </div>
+		<button id="modif_mode">Modifier</button>
+
+		<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <div class="hh1">Cliquez sur le mode à modifier</div>
+    
+    <div class= "fond_mode1">
+
+        <div class= "bouton_mode1">
+
+        <a href="#" class="mode_haut1"> <img src="soleil.png" alt="Soleil"/>Bonjour</a>
+
+        <a href="#" class="mode_haut1"> <img src="Lune.png" alt="Lune"/>Bonne nuit</a>
+
+        <a href="#" class="mode_bas1"> <img src="out.png" alt="Out"/>Je sors</a>
+
+        <a href="#" class="mode_bas1"> <img src="in.png" alt="Soleil"/>Je rentre</a>
+
+
+    </div>
+    </div>
+  </div>
+
+</div> 
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("modif_mode");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+} 
+</script>
+
+
+	</div>
+    </div>
+
+
+
+
+    <p class="hh">Gérez votre maison</p>
+
+
+
+
+    
+	<table class =capteurs>
+		
+		<tr>
+
+		<td><p class="parametre">Température</p>
+
+<label class="switch">
+ <input type="checkbox">
+ <span class="slider round"></span>
+</label>
+		
+		<div class="valeurtemp">
+		<p class="temp">18.5</p>
+		<p class="degres">°C</p>
+		</div>
+
+		<div class="fleches">
+			<a href="#" class="up"> <img src="up.png" alt="up"/>
+			<a href="#" class="down"> <img src="down.png" alt="down"/>
+		</div>
+
+		</td>
+
+		<td><p class="parametre">Lumière</p>
+				
+<label class="switch">
+ <input type="checkbox">
+ <span class="slider round"></span>
+</label>
+
+<div class="valeurlum">
+		<p class="temp">60</p>
+		<p class="degres">%</p>
+		</div>
+
+		<div class="fleches">
+			<a href="#" class="up"> <img src="up.png" alt="up"/>
+			<a href="#" class="down"> <img src="down.png" alt="down"/>
+		</div>
+
+
+		</td>
+		</tr>
+		
+
+		<tr>
+
+		<td><p class="parametre">Volets</p>
+
+<label class="switch">
+<input type="checkbox">
+<span class="slider round"></span>
+</label>
+
+	
+	<div class="slidecontain">
+  	<input type="range" min="1" max="100" value="50" class="slid" id="myRange">
+	</div>
+
+	<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+    output.innerHTML = this.value;
+} 
+
+</script>
+
+
+		</td>
+
+		<td><p class="parametre">Humidité</p>
+
+<label class="switch">
+<input type="checkbox">
+<span class="slider round"></span>
+</label>
+
+	<div class="valeurhum">
+		<p class="temp">50</p>
+		<p class="degres">%</p>
+		</div>
+
+		<div class="fleches">
+			<a href="#" class="up"> <img src="up.png" alt="up"/>
+			<a href="#" class="down"> <img src="down.png" alt="down"/>
+		</div>
+
+		</td>
+		</tr>
+
+	</table>
+	
+
+
+	
+	<div class="btnplus">
+		<a href="#" class="boutonplus">+</a>
+	</div>
+	
+    </body>
+
+</html>

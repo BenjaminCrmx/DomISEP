@@ -1,0 +1,658 @@
+html, body {
+	
+	margin: 0; padding: 0;
+	background-color: white;
+}
+
+/* début du header */
+#header  {
+	width: 100%;
+	height: 80px;
+	list-style-type : none; 
+	margin : 0;
+	padding : 15px 0 0 0;
+	background-color : white;
+	position: fixed;
+	top:0px;
+}
+
+ul#header li {
+	padding : 0 3em;
+}
+
+
+ul#header li.menu_gauche {
+	display: flex;
+	align-items: center;
+	float : left;
+}
+
+
+ul#header li.menu_gauche a.ecriture {
+	text-decoration : none;
+	font-size: 33px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #BEBEBE;
+	margin: 0 0 0 85px;
+}
+
+
+ul#header li.menu_droite {
+	float : right;
+}
+
+
+ul#header img {
+
+	width: 63px;
+	height: 63px;
+	border-radius: 50%;
+}
+
+/* menu deroulant*/
+.menuvertical {
+    width: 130px; /* Largeur du menu */ 
+}
+.menuvertical, 
+.menuvertical ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none ; 
+    padding: 0px;
+}
+.menuvertical ul {
+    /* Masquage des sous-menu par defaut */
+    display: none ;
+}
+.menuvertical li {
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+       sous-menu correctement en absolu */
+    position:   relative;
+}
+.menuvertical a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block ;
+    
+    /* Dimensions des liens */
+    width: 150px;
+    height: 30px;
+    line-height: 30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    padding: 6px 0px;
+    text-align: center;
+}
+.menuvertical li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block ;
+    
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 40px; 
+    left: 0px; /* Decalage du sous-menu de la largeur du menu */
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+.menuvertical ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+    en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+/* Gestion des couleurs */
+.menuvertical li {
+/* Couleur d'arriere-plan du menu */
+}
+.menuvertical li a {
+    color: #BEBEBE; /* Couleur du texte du menu */
+    text-decoration: none;
+    font-size: 33px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.menuvertical li:hover {
+ /* Couleur d'arriere-plan du menu au survol */
+}
+.menuvertical li:hover a {
+/* Couleur du texte du menu au survol */
+}
+.menuvertical ul li {
+    background-color: white; /* Couleur d'arriere-plan des sous-menu */
+    margin: 0px;
+}
+.menuvertical ul li:hover {
+    /* background-color: #DCDCDC;  Couleur d'arriere-plan des sous-menu au survol */
+}
+.menuvertical ul li a {
+    color: #BEBEBE; /* Couleur du texte des sous-menu */
+    font-size: 24px;
+    border-bottom: 1px solid #BEBEBE;
+}
+.menuvertical ul li:hover a {
+    color: #888888; /* Couleur du texte des sous-menu au survol */
+    font-size: 25px;
+}
+/* fin menu deroulant*/
+
+/* menu deroulant2*/
+.menuvertical2 {
+    width: 130px; /* Largeur du menu */ 
+}
+.menuvertical2, 
+.menuvertical2 ul {
+    /* Suppression des puces et des marges pour les listes du menu et des sous-menus */
+    list-style-type: none ; 
+    padding: 0px;
+}
+.menuvertical2 ul {
+    /* Masquage des sous-menu par defaut */
+    display: none ;
+}
+.menuvertical2 li {
+    /* Positionnement relative des elements de menu pour pouvoir positionner les 
+       sous-menu correctement en absolu */
+    position:   relative;
+}
+.menuvertical2 a {
+    /* On transforme les liens en bloc pour pouvoir les dimensionner */
+    display: block ;
+    
+    /* Dimensions des liens */
+    width: 150px;
+    height: 30px;
+    line-height: 30px; /* Doit etre equivalent a la hauteur du menu pour centrer le texte verticalement */
+    /* padding: 3px 0px; */
+    text-align: center;
+}
+.menuvertical2 li:hover ul {
+    /* Affichage du soumenu au survol */
+    display: block ;
+    
+    /* Positionnement du sous-menu */
+    position: absolute;
+    top: 66px; 
+    left: -40px; /* Decalage du sous-menu de la largeur du menu */
+    z-index: 100; /* Gestion de la superposition des sous-menus par rapport au reste de la page */
+}
+.menuvertical2 ul a {
+    /* Changement de l'affichage des liens des sous-menus pour ne pas les afficher
+    en inline-block comme les liens de menu, ils seront donc verticaux */
+    display: block;
+}
+
+/* Gestion des couleurs */
+.menuvertical2 li {
+/* Couleur d'arriere-plan du menu */
+}
+.menuvertical2 li a {
+    color: #BEBEBE; /* Couleur du texte du menu */
+    text-decoration: none;
+    font-size: 33px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.menuvertical2 li:hover {
+ /* Couleur d'arriere-plan du menu au survol */
+}
+.menuvertical2 li:hover a {
+/* Couleur du texte du menu au survol */
+}
+.menuvertical2 ul li {
+    background-color: white; /* Couleur d'arriere-plan des sous-menu */
+    margin: 0px;
+}
+.menuvertical2 ul li:hover {
+    /* background-color: #DCDCDC;  Couleur d'arriere-plan des sous-menu au survol */
+}
+.menuvertical2 ul li a {
+    color: #BEBEBE; /* Couleur du texte des sous-menu */
+    font-size: 24px;
+    border-bottom: 1px solid #BEBEBE;
+}
+.menuvertical2 ul li:hover a {
+    color: #888888; /* Couleur du texte des sous-menu au survol */
+    font-size: 25px;
+}
+/* fin menu deroulant2*/
+/* fin du header */
+
+
+
+
+
+/*début des modes*/
+.fond_mode {
+	background-color: #DCDCDC;
+	height: 210px;
+	width: 650px;
+	padding: 40px 50px;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top: 150px;
+	border-radius: 20px;
+  max-width: 100%;
+}
+
+div.fond_mode img {
+	width: 30px;
+	height: 30px;
+	padding: 0 2em 0 0;
+}
+
+div.fond_mode div.bouton_mode {
+	/*background-color: black;*/
+	height: 170px;
+}
+
+.mode_haut {
+	float: left;
+	margin: 0 0 0 85px;
+}
+
+.mode_bas {
+	display:inline-block;
+	float:left;
+}
+
+div.fond_mode div.bouton_mode a {
+	display: block;
+	width: 220px;
+	height: 75px;
+	text-decoration: none;
+	font-size: 21px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888888;
+	background: white;
+	padding: 0 2em;
+	border-radius: 17px;
+	margin: 0 1em 1em 0;
+}
+
+div.fond_mode #modif_mode {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #888888;
+	font-size: 18px;
+	float: right;
+	margin-top: 10px;
+  border: none;
+  background-color: #DCDCDC;
+  border-bottom: 1px solid #888888;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 100%;
+    height: 0px
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+div.hh1
+{
+
+    color: white;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-top: 85px;
+}
+
+
+
+.fond_mode1 {
+    height: 210px;
+    width: 650px;
+    padding: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+div.fond_mode1 img {
+    width: 30px;
+    height: 30px;
+    padding: 0 2em 0 0;
+}
+
+div.fond_mode1 div.bouton_mode1 {
+    /*background-color: black;*/
+    height: 170px;
+}
+
+.mode_haut1 {
+    float: left;
+    margin: 0 0 0 85px;
+}
+
+.mode_bas1 {
+    display:inline-block;
+    float:left;
+}
+
+div.fond_mode1 div.bouton_mode1 a {
+    display: block;
+    width: 220px;
+    height: 75px;
+    text-decoration: none;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    background: white;
+    padding: 0 2em;
+    border-radius: 17px;
+    margin: 0 1em 1em 0;
+}
+
+/* fin des modes*/
+
+
+
+p.hh
+{
+
+	color: #888888;
+	font-size: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 5% 0 0 5%;
+}
+
+
+
+/* début du tableau capteur*/
+
+table.capteurs 
+{
+  border-spacing: 40px;
+	width: 100%;
+}
+
+.capteurs td {
+    background-color: #DCDCDC;
+    border-radius: 20px;
+    height: 200px;
+    width: 50%;
+}
+
+.parametre
+{ 
+	color: #888888;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 10%;
+  margin-top: -60px;
+}
+
+div.valeurtemp p {
+  color: #546DC6;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 0px 0px;
+}
+
+div.valeurtemp {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 0px 0px 10%;
+  height: 21px;
+  width: 150px;
+}
+
+div.valeurtemp p.temp {
+  font-size: 60px;
+}
+
+div.valeurtemp p.degres {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+div.fleches {
+  display: flex;
+  align-items: baseline;
+  margin: -21px 0 0 0;
+  height: 21px;
+  width: 136px;
+  float: right;
+}
+
+div.fleches a {
+  margin-top: 38px;
+}
+
+div.fleches img {
+  width: 50px;
+  height: 30px;
+}
+
+
+div.valeurlum p {
+  color: #EECD26;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 0px 0px;
+}
+
+div.valeurlum {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 0px 0px 10%;
+  height: 21px;
+  width: 150px;
+}
+
+div.valeurlum p.temp {
+  font-size: 60px;
+}
+
+div.valeurlum p.degres {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+div.fleches {
+  display: flex;
+  align-items: baseline;
+  margin: -21px 0 0 0;
+  height: 21px;
+  width: 136px;
+  float: right;
+}
+
+div.fleches a {
+  margin-top: 38px;
+}
+
+div.fleches img {
+  width: 50px;
+  height: 30px;
+}
+
+
+div.valeurhum p {
+  color: #BEBEBE;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 0px 0px;
+}
+
+div.valeurhum {
+  display: flex;
+  align-items: baseline;
+  margin: 0px 0px 0px 10%;
+  height: 21px;
+  width: 150px;
+}
+
+div.valeurhum p.temp {
+  font-size: 60px;
+}
+
+div.valeurhum p.degres {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+div.fleches {
+  display: flex;
+  align-items: baseline;
+  margin: -21px 0 0 0;
+  height: 21px;
+  width: 136px;
+  float: right;
+}
+
+div.fleches a {
+  margin-top: 38px;
+}
+
+div.fleches img {
+  width: 50px;
+  height: 30px;
+}
+
+.slidecontain {
+    width: 80%; /* Width of the outside container */
+    margin: 0 0 0 6%;
+}
+
+/* The slider itself */
+.slid {
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+
+}
+
+/* Mouse-over effects */
+.slid:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slid::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
+
+.slid::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: white; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 50%;
+}
+
+/* bouton switch*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  float: right;
+  margin-top: -65px;
+  margin-right: 10%;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Fin du bouton switch*/
+
+
+
+div.btnplus{
+	float:right;
+	margin: 0 45px 0 0;
+}
+div.btnplus a.boutonplus {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background:#DCDCDC;
+	border-radius:50%;
+	color: white;
+	font-size: 67px;
+	text-decoration: none;
+	text-align: center;	
+}
+
+/* fin du tableau capteur*/
+
+
+
+
